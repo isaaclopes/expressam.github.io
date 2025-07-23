@@ -1,116 +1,312 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Express Açougue e Mercearia – Carnes Frescas em Polvilho, Cajamar</title>
-  <meta name="description" content="Express Açougue e Mercearia — carnes frescas, frios e itens de mercearia com entrega e atendimento familiar em Polvilho, Cajamar. Peça via WhatsApp!">
-  <link rel="canonical" href="https://g.co/kgs/tFCsZMi">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ButcherShop",
-    "name": "Express Açougue e Mercearia",
-    "description": "Carnes frescas, frios e mercearia com atendimento familiar em Polvilho, Cajamar.",
-    "url": "https://g.co/kgs/tFCsZMi",
-    "sameAs": ["https://www.instagram.com/express.a_m/"],
-    "telephone": "(11) 97443-9815",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Polvilho",
-      "addressRegion": "Cajamar",
-      "addressCountry": "BR"
-    },
-    "openingHours": ["Mo-Sa 08:00-19:00"],
-    "image": "https://expressam.com.br/assets/img/fachada.webp"
-  }
-  </script>
-  <link href="css/stylesv2.css" rel="stylesheet" />
-</head>
-<body>
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <div class="nav-logo"><img src="assets/img/navbar-logo.svg" width="150" title="Express Açougue e Mercearia" alt="Express Açougue e Mercearia" fetchpriority="high" /></div>
-      <ul class="nav-links">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </div>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express Açougue e Mercearia - Carnes Frescas em Polvilho</title>
+    <meta
+      name="description"
+      content="Express Açougue e Mercearia em Polvilho, Cajamar. Carnes frescas, qualidade premium e atendimento familiar há mais de 4 anos."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M3X3BLRD");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ButcherShop",
+          "@id": "https://expressam.com.br",
+          "name": "Express Açougue e Mercearia",
+          "description": "Carnes frescas, frios e mercearia com atendimento familiar em Polvilho, Cajamar.",
+          "url": "https://g.co/kgs/tFCsZMi",
+          "sameAs": ["https://www.instagram.com/express.a_m", "https://api.whatsapp.com/send?phone=5511974439815"],
+          "telephone": "(11) 97443-9815",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Polvilho",
+            "addressRegion": "Cajamar",
+            "addressCountry": "BR"
+          },
+          "openingHours": ["Mo-Sa 08:00-19:00"],
+          "image": "https://expressam.com.br/images/logo.svg"
+        }
+        </script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M3X3BLRD"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-brand">
+          <a href="#inicio"><img src="images/logo.svg" alt="Express Açougue e Mercearia" height="50" /></a>
+        </div>
+        <div class="nav-menu">
+          <a href="#inicio" class="nav-link">Início</a>
+          <a href="#produtos" class="nav-link">Produtos</a>
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
 
-  <section class="hero" id="inicio">
-    <div class="hero-content">
-      <h1 class="logo">Express</h1>
-      <p class="logo-subtitle">Açougue e Mercearia</p>
-      <p class="tagline">Carnes Frescas • Qualidade Premium • Atendimento Familiar</p>
-      <div class="hero-buttons">
-        <a href="#produtos" class="cta-button">Nossos Produtos</a>
-        <a href="#contato" class="cta-button cta-secondary">Fale Conosco</a>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+      <div class="hero-background">
+        <img
+          src="images/carne_tabua.jpg"
+          alt="Carnes frescas"
+          class="hero-image"
+        />
+        <div class="hero-overlay"></div>
       </div>
-    </div>
-  </section>
-
-  <section class="section" id="produtos">
-    <h2 class="section-title fade-in">Nossos Produtos</h2>
-    <div class="products-grid">
-      <!-- cards como antes -->
-    </div>
-  </section>
-
-  <section class="about" id="sobre">
-    <div class="section">
-      <h2 class="section-title fade-in">Sobre o Express</h2>
-      <div class="about-content">
-        <div class="about-text slide-in-left">
-          <h3>Tradição e Qualidade em Polvilho</h3>
-          <p>O Express Açougue e Mercearia é um negócio familiar que serve a comunidade de Polvilho com produtos de alta qualidade e atendimento personalizado.</p>
-        </div>
-        <div class="about-visual slide-in-right">
-          <div class="about-visual-content"><img src="assets/img/header-bg.png" title="Express Açougue e Mercearia" alt="Express Açougue e Mercearia" fetchpriority="high" /></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Express</h1>
+        <h2 class="hero-subtitle">Açougue e Mercearia</h2>
+        <p class="hero-description">
+          Carnes Frescas • Qualidade Premium • Atendimento Familiar
+        </p>
+        <div class="hero-buttons">
+          <a href="#produtos" class="btn btn-primary">NOSSOS PRODUTOS</a>
+          <a href="#contato" class="btn btn-secondary">FALE CONOSCO</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="location" id="contato">
-    <div class="section">
-      <h2 class="section-title">Visite ou Peça</h2>
-      <div class="contact-grid">
-        <div class="contact-card fade-in">
-          <div class="contact-icon"><img src="assets/img/logos/maps.svg" width="50" title="Localização Express Açougue e Mercearia" alt="Localização Express Açougue e Mercearia" fetchpriority="high" /></div>
-          <h3 class="contact-title">Localização</h3>
-          <p class="contact-info"><a href="https://g.co/kgs/tFCsZMi" style="color: #ccc; text-decoration: none;">R. das Papoulas, 6 - Polvilho, Cajamar - SP, 07791-610</a></p>
-        </div>
-        <div class="contact-card fade-in">
-          <div class="contact-icon"><img src="assets/img/logos/whatsapp.svg" width="50" title="WhatsApp Express Açougue e Mercearia" alt="WhatsApp Express Açougue e Mercearia" fetchpriority="high" /></div>
-          <h3 class="contact-title">WhatsApp</h3>
-          <p class="contact-info"><a href="https://api.whatsapp.com/send?phone=5511974439815" style="color: #ccc; text-decoration: none;">Clique para pedir pelo WhatsApp</a></p>
-        </div>
-        <div class="contact-card fade-in">
-          <div class="contact-icon"><img src="assets/img/logos/instagram.svg" title="Instagram Express Açougue e Mercearia" alt="Instagram Express Açougue e Mercearia" width="50" fetchpriority="high" /></div>
-          <h3 class="contact-title">Instagram</h3>
-          <p class="contact-info"><a href="https://www.instagram.com/express.a_m/" style="color: #ccc; text-decoration: none;">express.a_m</a></p>
-        </div>
-        <div class="contact-card fade-in">
-          <div class="contact-icon"><img src="assets/img/logos/delivery.svg" title="Express Açougue e Mercearia" alt="Express Açougue e Mercearia" width="50" fetchpriority="high" /></div>
-          <h3 class="contact-title">Entrega</h3>
-          <p class="contact-info">Delivery na região<br>Consulte disponibilidade via WhatsApp</p>
+    <!-- Diferenciais -->
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3 class="feature-title">Qualidade Premium</h3>
+            <p class="feature-description">
+              Carnes selecionadas com rigoroso controle de qualidade
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-cut"></i>
+            </div>
+            <h3 class="feature-title">Cortes Especiais</h3>
+            <p class="feature-description">
+              Açougueiros experientes para cortes personalizados
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="feature-title">Atendimento Familiar</h3>
+            <p class="feature-description">
+              Tradição e cuidado no atendimento há gerações
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="social-links">
-      <a href="https://www.instagram.com/express.a_m/" target="_blank" class="social-link"><img src="assets/img/logos/instagram.svg" title="Express Açougue e Mercearia" alt="Express Açougue e Mercearia" width="30" fetchpriority="high" /></a>
-      <a href="https://api.whatsapp.com/send?phone=5511974439815" class="social-link"><img src="assets/img/logos/whatsapp.svg" title="Express Açougue e Mercearia" alt="Express Açougue e Mercearia" width="30" fetchpriority="high" /></a>
-    </div>
-    <p class="footer-text">&copy; 2025 Express Açougue e Mercearia</p>
-    <p class="footer-brand">Qualidade e Tradição em Polvilho</p>
-  </footer>
+    <!-- Produtos -->
+    <section id="produtos" class="products">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Nossos Produtos</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/carnes_variadas.jpg" alt="Carnes Variadas" />
+              <div class="product-overlay">
+                <h3 class="product-title">Carnes Variadas</h3>
+                <p class="product-subtitle">Bovina, suína e aves</p>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/cortes_premium.jpg" alt="Cortes Premium" />
+              <div class="product-overlay">
+                <h3 class="product-title">Cortes Premium</h3>
+                <p class="product-subtitle">Seleção especial</p>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="images/acougueiro_profissional.jpg"
+                alt="Cortes Personalizados"
+              />
+              <div class="product-overlay">
+                <h3 class="product-title">Cortes Personalizados</h3>
+                <p class="product-subtitle">Do jeito que você gosta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script src="js/scriptsv2.js"></script>
-</body>
+    <!-- Sobre -->
+    <section id="sobre" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">Sobre o Express</h2>
+            <div class="section-divider"></div>
+            <h3 class="about-subtitle">Tradição e Qualidade em Polvilho</h3>
+            <p class="about-description">
+              O Express Açougue e Mercearia é um negócio familiar que serve a
+              população de Polvilho com produtos de alta qualidade e
+              atendimento personalizado.
+            </p>
+            <p class="about-description">
+              Nossa experiência e dedicação garantem que você leve para casa
+              sempre o melhor em carnes frescas e produtos selecionados.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <div class="stat-number">4+</div>
+                <div class="stat-label">Anos de Experiência</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Clientes Satisfeitos</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="images/mercado.webp" alt="Interior do açougue" />
+            <div class="about-badge">
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Visite ou Peça</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3 class="contact-title">Localização</h3>
+            <p class="contact-info">
+              R. das Papoulas, 6<br />
+              Polvilho, Cajamar - SP<br />
+              07791-610
+            </p>
+            <a
+              href="https://g.co/kgs/tFCsZMi"
+              target="_blank"
+              class="btn btn-primary btn-small"
+              >Ver no Google Maps</a
+            >
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3 class="contact-title">WhatsApp</h3>
+            <p class="contact-info">Clique para pedir pelo WhatsApp</p>
+            <a
+              href="https://wa.me/5511974439815?text=Olá! Gostaria de saber mais sobre os produtos do Express Açougue."
+              class="btn btn-primary btn-small"
+              >Enviar Mensagem</a
+            >
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <h3 class="contact-title">Instagram</h3>
+            <p class="contact-info">@express.a_m</p>
+            <a
+              href="https://www.instagram.com/express.a_m/"
+              class="btn btn-primary btn-small"
+              >Seguir</a
+            >
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3 class="contact-title">Entrega</h3>
+            <p class="contact-info">
+              Delivery na região<br />
+              Consulte disponibilidade via WhatsApp
+            </p>
+            <a
+              href="https://wa.me/5511974439815?text=Olá! Gostaria de saber mais sobre a entrega do Express Açougue."
+              class="btn btn-primary btn-small"
+              >Consultar</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/express.a_m/"
+            target="_blank"
+            class="social-link"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://wa.me/5511974439815?text=Olá! Gostaria de saber mais sobre os produtos do Express Açougue."
+            target="_blank"
+            class="social-link"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+        <p class="footer-copyright">© 2025 Express Açougue e Mercearia</p>
+        <p class="footer-slogan">Qualidade e Tradição em Polvilho</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
